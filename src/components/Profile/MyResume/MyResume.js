@@ -18,67 +18,32 @@ export default class MyResume extends Component {
                     <h3>Work Experience</h3>
                   </div>
                 </li>
-                <li className="animate-box timeline-unverted">
-                  <div className="timeline-badge">
-                    <i className="icon-suitcase"></i>
-                  </div>
-                  <div className="timeline-panel">
-                    <div className="timeline-heading">
-                      <h3 className="timeline-title">Senior Developer</h3>
-                      <span className="company">
-                        Company Name - 2016 - Current
-                      </span>
-                    </div>
-                    <div className="timeline-body">
-                      <p>
-                        Far far away, behind the word mountains, far from the
-                        countries Vokalia and Consonantia, there live the blind
-                        texts.
-                      </p>
-                    </div>
-                  </div>
-                </li>
-                <li className="timeline-inverted animate-box">
-                  <div className="timeline-badge">
-                    <i className="icon-suitcase"></i>
-                  </div>
-                  <div className="timeline-panel">
-                    <div className="timeline-heading">
-                      <h3 className="timeline-title">Junior Developer</h3>
-                      <span className="company">
-                        Company Name - 2013 - 2015
-                      </span>
-                    </div>
-                    <div className="timeline-body">
-                      <p>
-                        Far far away, behind the word mountains, they live in
-                        Bookmarksgrove right at the coast of the Semantics, a
-                        large language ocean.
-                      </p>
-                    </div>
-                  </div>
-                </li>
-                <li className="animate-box timeline-unverted">
-                  <div className="timeline-badge">
-                    <i className="icon-suitcase"></i>
-                  </div>
-                  <div className="timeline-panel">
-                    <div className="timeline-heading">
-                      <h3 className="timeline-title">UI/UX Designer</h3>
-                      <span className="company">
-                        Company Name - 2010 - 2012
-                      </span>
-                    </div>
-                    <div className="timeline-body">
-                      <p>
-                        Far far away, behind the word mountains, far from the
-                        countries Vokalia and Consonantia, there live the blind
-                        texts.
-                      </p>
-                    </div>
-                  </div>
-                </li>
-
+                {this.props.works.map((work, index) => {
+                  const workCss = ["animate-box"];
+                  if (index % 2 === 0) {
+                    workCss.push("timeline-unverted");
+                  } else {
+                    workCss.push("timeline-inverted");
+                  }
+                  return (
+                    <li key={work.title} className={workCss.join(" ")}>
+                      <div className="timeline-badge">
+                        <i className="icon-suitcase"></i>
+                      </div>
+                      <div className="timeline-panel">
+                        <div className="timeline-heading">
+                          <h3 className="timeline-title">{work.title}</h3>
+                          <span className="company">
+                            {work.company} - {work.startDate} - {work.endDate}
+                          </span>
+                        </div>
+                        <div className="timeline-body">
+                          <p>{work.description}</p>
+                        </div>
+                      </div>
+                    </li>
+                  );
+                })}
                 <br />
                 <li className="timeline-heading text-center animate-box">
                   <div>
