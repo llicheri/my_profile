@@ -1,26 +1,56 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// library imports
+import React, { Component } from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+//////////internal imports
+// styles
+import "./App.css";
+import "./assets/css/animate.css";
+import "./assets/css/bootstrap.css";
+import "./assets/css/icomoon.css";
+import "./assets/css/style.css";
+// components
+import Aux from "./hoc/Auxiliary";
+import AboutMe from "./components/AboutMe/AboutMe";
+import Header from "./components/Header/Header";
+import MyResume from "./components/MyResume/MyResume";
+import MyServices from "./components/MyServices/MyServices";
+import Skills from "./components/Skills/Skills";
+import Work from "./components/Work/Work";
+import Posts from "./components/Posts/Posts";
+import HireMe from "./components/HireMe/HireMe";
+import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
+import Spinner from "./components/Spinner/Spinner";
+
+class App extends Component {
+  render() {
+    return (
+      <Aux>
+        <Spinner />
+        <div id="page">
+          <Header />
+
+          <AboutMe />
+
+          <MyResume />
+
+          <MyServices />
+
+          <Skills />
+
+          <Work />
+
+          <Posts />
+
+          <HireMe />
+
+          <Contact />
+        </div>
+
+        <Footer />
+      </Aux>
+    );
+  }
 }
 
 export default App;
