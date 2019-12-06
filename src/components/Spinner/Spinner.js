@@ -1,7 +1,13 @@
-import React from "react";
+import React, { Component } from "react";
 
 import classes from "./Spinner.module.css";
 
-export default function Spinner() {
-  return <div id="Spinner" className={classes.Spinner}></div>;
+export default class Spinner extends Component {
+  render() {
+    const css = [classes.Spinner];
+    if (this.props.viewSpinner) {
+      css.push(classes.show);
+    }
+    return <div id="Spinner" className={css.join(" ")}></div>;
+  }
 }

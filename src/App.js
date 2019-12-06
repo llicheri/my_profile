@@ -23,10 +23,17 @@ import Footer from "./components/Footer/Footer";
 import Spinner from "./components/Spinner/Spinner";
 
 class App extends Component {
+  state = {
+    isSpinnerActive: true
+  };
+  componentDidMount() {
+    // wait 500ms to order to the spinner to hide hisself
+    setTimeout(() => this.setState({ isSpinnerActive: false }), 500);
+  }
   render() {
     return (
       <Aux>
-        <Spinner />
+        <Spinner viewSpinner={this.state.isSpinnerActive} />
         <div id="page">
           <Header />
 

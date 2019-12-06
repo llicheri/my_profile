@@ -6,4 +6,11 @@
   height: 100%;
   z-index: 9999;
   background: url(../../assets/images/loader.gif) center no-repeat #fff;
+  transition: 1s;
+  opacity: 0;
+  visibility: hidden;
+}
+.Spinner.show {
+  opacity: 1;
+  visibility: visible;
 }
