@@ -1,6 +1,6 @@
 import React from "react";
 
-import coverBg1 from "../../assets/images/cover_bg_1.jpg";
+import coverBg1 from "../../../assets/images/cover_bg_1.jpg";
 
 export default function Contact() {
   return (

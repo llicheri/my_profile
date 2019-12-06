@@ -1,8 +1,8 @@
 import React from "react";
 
-import portfolio1 from "../../assets/images/portfolio-1.jpg";
-import portfolio2 from "../../assets/images/portfolio-2.jpg";
-import portfolio3 from "../../assets/images/portfolio-3.jpg";
+import portfolio1 from "../../../assets/images/portfolio-1.jpg";
+import portfolio2 from "../../../assets/images/portfolio-2.jpg";
+import portfolio3 from "../../../assets/images/portfolio-3.jpg";
 
 export default function Posts() {
   return (

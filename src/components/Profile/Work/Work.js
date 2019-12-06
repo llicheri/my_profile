@@ -1,13 +1,13 @@
 import React from "react";
 
-import portfolio1 from "../../assets/images/portfolio-1.jpg";
-import portfolio2 from "../../assets/images/portfolio-2.jpg";
-import portfolio3 from "../../assets/images/portfolio-3.jpg";
-import portfolio4 from "../../assets/images/portfolio-4.jpg";
-import portfolio5 from "../../assets/images/portfolio-5.jpg";
-import portfolio6 from "../../assets/images/portfolio-6.jpg";
-import portfolio7 from "../../assets/images/portfolio-7.jpg";
-import portfolio8 from "../../assets/images/portfolio-8.jpg";
+import portfolio1 from "../../../assets/images/portfolio-1.jpg";
+import portfolio2 from "../../../assets/images/portfolio-2.jpg";
+import portfolio3 from "../../../assets/images/portfolio-3.jpg";
+import portfolio4 from "../../../assets/images/portfolio-4.jpg";
+import portfolio5 from "../../../assets/images/portfolio-5.jpg";
+import portfolio6 from "../../../assets/images/portfolio-6.jpg";
+import portfolio7 from "../../../assets/images/portfolio-7.jpg";
+import portfolio8 from "../../../assets/images/portfolio-8.jpg";
 
 export default function Work() {
   return (

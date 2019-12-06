@@ -1,13 +1,13 @@
 import React from "react";
 
-import MyResume from "../../components/MyResume/MyResume";
-import MyServices from "../../components/MyServices/MyServices";
-import Skills from "../../components/Skills/Skills";
-import Work from "../../components/Work/Work";
-import Posts from "../../components/Posts/Posts";
-import HireMe from "../../components/HireMe/HireMe";
-import Contact from "../../components/Contact/Contact";
-import AboutMe from "../../components/AboutMe/AboutMe";
+import MyResume from "../../components/Profile/MyResume/MyResume";
+import MyServices from "../../components/Profile/MyServices/MyServices";
+import Skills from "../../components/Profile/Skills/Skills";
+import Work from "../../components/Profile/Work/Work";
+import Posts from "../../components/Profile/Posts/Posts";
+import HireMe from "../../components/Profile/HireMe/HireMe";
+import Contact from "../../components/Profile/Contact/Contact";
+import AboutMe from "../../components/Profile/AboutMe/AboutMe";
 
 export default function Profile() {
   return (
