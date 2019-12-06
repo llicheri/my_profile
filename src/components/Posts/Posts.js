@@ -20,15 +20,15 @@ export default function Posts() {
         <div className="row">
           <div className="col-md-4">
             <div className="fh5co-blog animate-box">
-              <a
-                href="#"
+              <div
+                href="#0"
                 className="blog-bg"
                 style={{ backgroundImage: `url(${portfolio1})` }}
-              ></a>
+              ></div>
               <div className="blog-text">
                 <span className="posted_on">Mar. 15th 2016</span>
                 <h3>
-                  <a href="#">Photoshoot On The Street</a>
+                  <a href="#0">Photoshoot On The Street</a>
                 </h3>
                 <p>
                   Far far away, behind the word mountains, far from the
@@ -42,7 +42,7 @@ export default function Posts() {
                     <i className="icon-eye2"></i>308
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="#0">
                       Read More<i className="icon-arrow-right22"></i>
                     </a>
                   </li>
@@ -52,15 +52,15 @@ export default function Posts() {
           </div>
           <div className="col-md-4">
             <div className="fh5co-blog animate-box">
-              <a
-                href="#"
+              <div
+                href="#0"
                 className="blog-bg"
                 style={{ backgroundImage: `url(${portfolio2})` }}
-              ></a>
+              ></div>
               <div className="blog-text">
                 <span className="posted_on">Mar. 15th 2016</span>
                 <h3>
-                  <a href="#">Surfing at Philippines</a>
+                  <a href="#0">Surfing at Philippines</a>
                 </h3>
                 <p>
                   Far far away, behind the word mountains, far from the
@@ -74,7 +74,7 @@ export default function Posts() {
                     <i className="icon-eye2"></i>308
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="#0">
                       Read More<i className="icon-arrow-right22"></i>
                     </a>
                   </li>
@@ -84,15 +84,15 @@ export default function Posts() {
           </div>
           <div className="col-md-4">
             <div className="fh5co-blog animate-box">
-              <a
-                href="#"
+              <div
+                href="#0"
                 className="blog-bg"
                 style={{ backgroundImage: `url(${portfolio3})` }}
-              ></a>
+              ></div>
               <div className="blog-text">
                 <span className="posted_on">Mar. 15th 2016</span>
                 <h3>
-                  <a href="#">Capture Living On Uderwater</a>
+                  <a href="#0">Capture Living On Uderwater</a>
                 </h3>
                 <p>
                   Far far away, behind the word mountains, far from the
@@ -106,7 +106,7 @@ export default function Posts() {
                     <i className="icon-eye2"></i>308
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="#0">
                       Read More<i className="icon-arrow-right22"></i>
                     </a>
                   </li>

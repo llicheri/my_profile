@@ -1,11 +1,6 @@
 (function() {
   "use strict";
 
-  // Parallax
-  var parallax = function() {
-    $(window).stellar();
-  };
-
   var contentWayPoint = function() {
     var i = 0;
     $(".animate-box").waypoint(
@@ -74,7 +69,6 @@
 
   $(function() {
     contentWayPoint();
-    parallax();
     skillsWayPoint();
   });
 })();

@@ -20,7 +20,8 @@ export default class Footer extends Component {
       this.setState({ isButtonVisisble: false });
     }
   };
-  onGoTopClickHandler = () => {
+  onGoTopClickHandler = event => {
+    event.preventDefault();
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
   render() {
@@ -37,7 +38,11 @@ export default class Footer extends Component {
                 <p>
                   &copy; 2019 Lorenzo Licheri. All Rights Reserved. <br />
                   Designed by{" "}
-                  <a href="http://lorenzolicheri.com" target="_blank">
+                  <a
+                    href="http://lorenzolicheri.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Lorenzo Licheri
                   </a>{" "}
                 </p>
@@ -46,11 +51,8 @@ export default class Footer extends Component {
           </div>
         </div>
 
-        <div className={buttonClasses.join(" ")} id="js-top">
-          {/* <a href="#" className="js-gotop">
-            <i className="icon-arrow-up22"></i>
-          </a> */}
-          <a className="js-gotop" onClick={this.onGoTopClickHandler}>
+        <div className={buttonClasses.join(" ")}>
+          <a href="#0" className="js-gotop" onClick={this.onGoTopClickHandler}>
             <i className="icon-arrow-up22"></i>
           </a>
         </div>

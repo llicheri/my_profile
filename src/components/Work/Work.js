@@ -21,7 +21,7 @@ export default function Work() {
         <div className="row">
           <div className="col-md-3 text-center col-padding animate-box">
             <a
-              href="#"
+              href="#0"
               className="work"
               style={{ backgroundImage: `url(${portfolio1})` }}
             >
@@ -33,7 +33,7 @@ export default function Work() {
           </div>
           <div className="col-md-3 text-center col-padding animate-box">
             <a
-              href="#"
+              href="#0"
               className="work"
               style={{ backgroundImage: `url(${portfolio2})` }}
             >
@@ -45,7 +45,7 @@ export default function Work() {
           </div>
           <div className="col-md-3 text-center col-padding animate-box">
             <a
-              href="#"
+              href="#0"
               className="work"
               style={{ backgroundImage: `url(${portfolio3})` }}
             >
@@ -57,7 +57,7 @@ export default function Work() {
           </div>
           <div className="col-md-3 text-center col-padding animate-box">
             <a
-              href="#"
+              href="#0"
               className="work"
               style={{ backgroundImage: `url(${portfolio4})` }}
             >
@@ -69,7 +69,7 @@ export default function Work() {
           </div>
           <div className="col-md-3 text-center col-padding animate-box">
             <a
-              href="#"
+              href="#0"
               className="work"
               style={{ backgroundImage: `url(${portfolio5})` }}
             >
@@ -81,7 +81,7 @@ export default function Work() {
           </div>
           <div className="col-md-3 text-center col-padding animate-box">
             <a
-              href="#"
+              href="#0"
               className="work"
               style={{ backgroundImage: `url(${portfolio6})` }}
             >
@@ -93,7 +93,7 @@ export default function Work() {
           </div>
           <div className="col-md-3 text-center col-padding animate-box">
             <a
-              href="#"
+              href="#0"
               className="work"
               style={{ backgroundImage: `url(${portfolio7})` }}
             >
@@ -105,7 +105,7 @@ export default function Work() {
           </div>
           <div className="col-md-3 text-center col-padding animate-box">
             <a
-              href="#"
+              href="#0"
               className="work"
               style={{ backgroundImage: `url(${portfolio8})` }}
             >
