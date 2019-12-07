@@ -52,34 +52,79 @@ export default class Profile extends Component {
       ],
       works: [
         {
-          title: "Senior Developer",
-          company: "Company Name",
-          startDate: "2016",
+          title: "Full stack developer",
+          company: "Freelence",
+          startDate: "2019",
           endDate: "Current",
-          description:
-            "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+          description: "Full stack developer as freelance developer"
         },
         {
-          title: "Junior Developer",
-          company: "Company Name",
-          startDate: "2013",
-          endDate: "2015",
+          title: "Front-End Team Leader",
+          company: "Credem ( consulente )",
+          startDate: "2018",
+          endDate: "2019",
           description:
-            "Far far away, behind the word mountains, they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."
+            "Technical manager of Milan pole front-end applications. As team leader I have coordinated a developer’s front-end team at work of company’s applications developments and design of several shared libraries."
         },
         {
-          title: "UI/UX Designer",
-          company: "Company Name",
-          startDate: "2010 ",
-          endDate: "2012",
+          title: "Angular medior developer",
+          company: "Findomestic ( consulente )",
+          startDate: "2017",
+          endDate: "2018",
           description:
-            "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+            "Front-end developer in an application of loans request and management from a bank. The application has been created for a customer but developed with a specific architecture to guarantee the different customization for future customers."
+        },
+        {
+          title: "Angular junior developer",
+          company: "Unicredit ( consulente )",
+          startDate: "2017",
+          description:
+            "Front-end developer for a building’s appraisals application. This was my and my company’s first Angular project. It required a continuous research of this new framework."
+        },
+        {
+          title: "Java developer",
+          company: "Unicredit ( consulente )",
+          startDate: "2017",
+          description:
+            "Java programmer for evolutionary and fixing of a big Java application used in production bank’s environment. Participation in the pre development analysis phase and obviously in the real development phase."
+        },
+        {
+          title: "Shell scripting and Database developer",
+          company: "Unicredit ( consulente )",
+          startDate: "2016",
+          description:
+            "Technical support of a big java application used by the bank to price the equities. The work was in a big team of developers and economist from different countries and my task was to maintain, fix and develop evolutionary of shall scripting used to launch, monitor and log the main application. This was done with .sh script, sql script and schedulator programs."
+        }
+      ],
+      courses: [
+        {
+          title: "Corso React.js",
+          course: "Udemy",
+          startDate: "2019",
+          description: "Corso di livello avanzato per sviluppo su React"
+        },
+        {
+          title: "Certificazione di Inglese",
+          course: "ABA English",
+          startDate: "2019",
+          description: "Certificazione di inglese di livello B1"
         }
       ],
       studies: [
-        { title: "", company: "", startDate: "", endDate: "", description: "" },
-        { title: "", company: "", startDate: "", endDate: "", description: "" },
-        { title: "", company: "", startDate: "", endDate: "", description: "" }
+        {
+          title: "Laurea in Informatica",
+          school: "Università degli studi di Milano",
+          startDate: "2011",
+          endDate: "2016",
+          description: "Corso di laurea in Informatica"
+        },
+        {
+          title: "Diploma scientifico",
+          school: "Liceo De Amicis",
+          startDate: "2005",
+          endDate: "2010",
+          description: "Diploma di liceo scientifico"
+        }
       ]
     };
   }
@@ -88,7 +133,11 @@ export default class Profile extends Component {
     return (
       <div id="page">
         <AboutMe />
-        <MyResume works={this.state.works} studies={this.state.studies} />
+        <MyResume
+          works={this.state.works}
+          courses={this.state.courses}
+          studies={this.state.studies}
+        />
         <MyServices />
         <Skills />
         <Work />
