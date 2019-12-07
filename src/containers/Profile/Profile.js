@@ -4,7 +4,7 @@ import React, { Component } from "react";
 import MyResume from "../../components/Profile/MyResume/MyResume";
 import MyServices from "../../components/Profile/MyServices/MyServices";
 import Skills from "../../components/Profile/Skills/Skills";
-import Work from "../../components/Profile/Work/Work";
+import Works from "../../components/Profile/Works/Works";
 import Posts from "../../components/Profile/Posts/Posts";
 import HireMe from "../../components/Profile/HireMe/HireMe";
 import Contact from "../../components/Profile/Contact/Contact";
@@ -13,6 +13,11 @@ import AboutMe from "../../components/Profile/AboutMe/AboutMe";
 import portfolio1 from "../../assets/images/portfolio-1.jpg";
 import portfolio2 from "../../assets/images/portfolio-2.jpg";
 import portfolio3 from "../../assets/images/portfolio-3.jpg";
+import portfolio4 from "../../assets/images/portfolio-4.jpg";
+import portfolio5 from "../../assets/images/portfolio-5.jpg";
+import portfolio6 from "../../assets/images/portfolio-6.jpg";
+import portfolio7 from "../../assets/images/portfolio-7.jpg";
+import portfolio8 from "../../assets/images/portfolio-8.jpg";
 
 export default class Profile extends Component {
   constructor(props) {
@@ -50,7 +55,7 @@ export default class Profile extends Component {
           image: portfolio3
         }
       ],
-      works: [
+      resumeWorks: [
         {
           title: "Full stack developer",
           company: "Freelence",
@@ -173,6 +178,64 @@ export default class Profile extends Component {
         { name: "AngularJS", value: "90" },
         { name: "Ruby", value: "85" },
         { name: "Java", value: "90" }
+      ],
+      works: [
+        {
+          id: "0",
+          link: "#0",
+          image: portfolio1,
+          name: "Project Name",
+          description: "Illustration"
+        },
+        {
+          id: "1",
+          link: "#0",
+          image: portfolio2,
+          name: "Project Name",
+          description: "Brading"
+        },
+        {
+          id: "2",
+          link: "#0",
+          image: portfolio3,
+          name: "Project Name",
+          description: "Illustration"
+        },
+        {
+          id: "3",
+          link: "#0",
+          image: portfolio4,
+          name: "Project Name",
+          description: "Design"
+        },
+        {
+          id: "4",
+          link: "#0",
+          image: portfolio5,
+          name: "Project Name",
+          description: "Website"
+        },
+        {
+          id: "5",
+          link: "#0",
+          image: portfolio6,
+          name: "Project Name",
+          description: "Illustration"
+        },
+        {
+          id: "6",
+          link: "#0",
+          image: portfolio7,
+          name: "Project Name",
+          description: "Brading"
+        },
+        {
+          id: "7",
+          link: "#0",
+          image: portfolio8,
+          name: "Project Name",
+          description: "Illustration"
+        }
       ]
     };
   }
@@ -182,13 +245,13 @@ export default class Profile extends Component {
       <div id="page">
         <AboutMe />
         <MyResume
-          works={this.state.works}
+          works={this.state.resumeWorks}
           courses={this.state.courses}
           studies={this.state.studies}
         />
         <MyServices services={this.state.services} />
         <Skills skills={this.state.skills} />
-        <Work />
+        <Works works={this.state.works} />
         <Posts posts={this.state.posts} />
         <HireMe />
         <Contact />
