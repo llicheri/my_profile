@@ -163,6 +163,16 @@ export default class Profile extends Component {
           description:
             "Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit."
         }
+      ],
+      skills: [
+        { name: "HTML5", value: "95" },
+        { name: "CSS3", value: "93" },
+        { name: "jQuery", value: "90" },
+        { name: "PHP", value: "89" },
+        { name: "MySQL", value: "95" },
+        { name: "AngularJS", value: "90" },
+        { name: "Ruby", value: "85" },
+        { name: "Java", value: "90" }
       ]
     };
   }
@@ -177,7 +187,7 @@ export default class Profile extends Component {
           studies={this.state.studies}
         />
         <MyServices services={this.state.services} />
-        <Skills />
+        <Skills skills={this.state.skills} />
         <Work />
         <Posts posts={this.state.posts} />
         <HireMe />
