@@ -125,6 +125,44 @@ export default class Profile extends Component {
           endDate: "2010",
           description: "Diploma di liceo scientifico"
         }
+      ],
+      services: [
+        {
+          icon: "icon-paintbrush",
+          title: "Web Design",
+          description:
+            "Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit."
+        },
+        {
+          icon: "icon-briefcase",
+          title: "Branding",
+          description:
+            "Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit."
+        },
+        {
+          icon: "icon-search",
+          title: "Analytics",
+          description:
+            "Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit."
+        },
+        {
+          icon: "icon-bargraph",
+          title: "Web Developent",
+          description:
+            "Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit."
+        },
+        {
+          icon: "icon-genius",
+          title: "Web Marketing",
+          description:
+            "Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit."
+        },
+        {
+          icon: "icon-chat",
+          title: "Support",
+          description:
+            "Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit."
+        }
       ]
     };
   }
@@ -138,7 +176,7 @@ export default class Profile extends Component {
           courses={this.state.courses}
           studies={this.state.studies}
         />
-        <MyServices />
+        <MyServices services={this.state.services} />
         <Skills />
         <Work />
         <Posts posts={this.state.posts} />
