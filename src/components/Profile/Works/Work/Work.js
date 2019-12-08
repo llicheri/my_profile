@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Work(props) {
   return (
-    <div className="col-md-3 text-center col-padding animate-box">
+    <div className="col-md-3 text-center col-padding animate-box withDelay">
       <a
         href={props.link}
         className="work"

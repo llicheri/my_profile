@@ -65,11 +65,7 @@ export default class Header extends Component {
           <div className="row">
             <div className="col-md-8 col-md-offset-2 text-center">
               <div className="display-t" style={style}>
-                <div
-                  className="display-tc animate-box"
-                  data-animate-effect="fadeIn"
-                  style={style}
-                >
+                <div className="display-tc animate-box" style={style}>
                   <div
                     className="profile-thumb"
                     style={{ background: `url(${myself})` }}

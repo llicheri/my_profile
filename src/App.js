@@ -17,12 +17,51 @@ import Spinner from "./components/Spinner/Spinner";
 
 class App extends Component {
   state = {
-    isSpinnerActive: true
+    isSpinnerActive: true,
+    elementsToAnimate: []
   };
   componentDidMount() {
+    // save all element to animate in state object
+    this.setState({
+      elementsToAnimate: document.getElementsByClassName("animate-box")
+    });
     // wait 500ms to order to the spinner to hide hisself
-    setTimeout(() => this.setState({ isSpinnerActive: false }), 500);
+    // and to calulate if some animation is required
+    setTimeout(() => {
+      this.setState({ isSpinnerActive: false });
+      this.handleScroll();
+    }, 500);
+    // add listener on scroll
+    window.addEventListener("scroll", this.handleScroll, true);
   }
+  // delete listner
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.handleScroll);
+  }
+  // on scroll activate animation for all elements with 'animated-fat' class
+  handleScroll = () => {
+    let delay = 0;
+    let isDelay = false;
+    for (let el of this.state.elementsToAnimate) {
+      if (
+        el.getBoundingClientRect().top <= window.innerHeight &&
+        !el.classList.contains("animated-fast")
+      ) {
+        if (el.classList.contains("withDelay")) {
+          delay++;
+          isDelay = true;
+        } else {
+          isDelay = false;
+        }
+        setTimeout(
+          () => {
+            el.classList.add("fadeInUp", "animated-fast");
+          },
+          isDelay ? delay * 100 : 0
+        );
+      }
+    }
+  };
   render() {
     return (
       <Aux>
